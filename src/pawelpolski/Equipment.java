@@ -1,3 +1,5 @@
+package pawelpolski;
+
 import java.io.Serializable;
 
 /**

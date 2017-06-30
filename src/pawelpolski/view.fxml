@@ -9,9 +9,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="340.0" minWidth="510.0" prefHeight="641.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="340.0" minWidth="510.0" prefHeight="641.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pawelpolski.Controller">
    <children>
-      <TableView fx:id="table" layoutX="200.0" layoutY="50.0" minHeight="560.0" minWidth="500.0" prefHeight="560.0" prefWidth="500.0">
+      <TableView fx:id="table" layoutX="200.0" layoutY="50.0" minHeight="482.0" minWidth="500.0" prefHeight="482.0" prefWidth="500.0">
          <columns>
             <TableColumn fx:id="id" minWidth="50.0" prefWidth="50.0" text="ID" />
             <TableColumn fx:id="serialNumber" minWidth="150.0" prefWidth="150.0" text="Serial Number" />
@@ -29,8 +29,7 @@
       <Button fx:id="cancelAndRemoveButton" disable="true" layoutX="5.0" layoutY="280.0" mnemonicParsing="false" onAction="#cancelAndRemoveButton" prefHeight="30.0" prefWidth="190.0" text="Remove" />
       <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="164.0" text="Equipment serial number" />
       <Label layoutX="14.0" layoutY="80.0" prefHeight="17.0" prefWidth="164.0" text="Equipment type" />
-      <Button fx:id="exportToExcel" disable="true" layoutX="4.0" layoutY="313.0" mnemonicParsing="false" onAction="#exportToExcel" prefHeight="27.0" prefWidth="190.0" text="Export to Excel (csv)" />
       <TextArea fx:id="textArea" editable="true" layoutX="4.0" layoutY="353.0" prefHeight="180.0" prefWidth="190.0" promptText="Serial number..." text="test" />
-      <Button fx:id="addFromTextArea" disable="true" layoutX="4.0" layoutY="553.0" mnemonicParsing="false" onAction="#addEquipmentsFromTextArea" prefHeight="27.0" prefWidth="190.0" text="Mass Add from TextArea" />
+      <Button fx:id="addFromTextArea" disable="true" layoutX="5.0" layoutY="317.0" mnemonicParsing="false" onAction="#addEquipmentsFromTextArea" prefHeight="27.0" prefWidth="190.0" text="Mass Add from TextArea" />
   </children>
 </Pane>

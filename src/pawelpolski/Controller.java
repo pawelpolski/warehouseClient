@@ -1,3 +1,5 @@
+package pawelpolski;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -45,8 +47,6 @@ public class Controller {
     public TableColumn type;
     @FXML
     public TableColumn status;
-    @FXML
-    public Button exportToExcel;
     @FXML
     public TextField filterField;
     @FXML
@@ -106,7 +106,6 @@ public class Controller {
                 editAndSaveButton.setText("Save");
                 table.setDisable(true);
                 initializeAndAddButton.setDisable(true);
-                exportToExcel.setDisable(true);
                 filterButton.setDisable(true);
                 addFromTextArea.setDisable(true);
                 cancelAndRemoveButton.setText("Cancel");
@@ -310,16 +309,6 @@ public class Controller {
 
 
     /**
-     * Listner for excel (csv file) button action, if pressed starts method from model which saves table view into file
-     *
-     * @param actionEvent
-     */
-    public void exportToExcel(ActionEvent actionEvent) throws Exception {
-        informationLabel.setText("Saved table to CSV file!");
-    }
-
-
-    /**
      * Clears all values in inputs fields label, and choice field
      */
     public void clearAllFields() {
@@ -340,7 +329,6 @@ public class Controller {
         cancelAndRemoveButton.setDisable(trueOrFalse);
         editAndSaveButton.setDisable(trueOrFalse);
         initializeAndAddButton.setDisable(trueOrFalse);
-        exportToExcel.setDisable(trueOrFalse);
         addFromTextArea.setDisable(trueOrFalse);
         filterButton.setDisable(trueOrFalse);
     }
